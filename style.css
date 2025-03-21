@@ -1,0 +1,366 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4f8, #e0e8f0);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Основное содержимое */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #2575fc;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+ul li strong {
+    color: #2575fc;
+}
+
+a {
+    color: #2575fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6a11cb;
+    text-decoration: underline;
+}
+
+/* Подвал */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
+/* Стили для основного содержимого */
+main {
+    padding: 20px; /* Внутренние отступы */
+    max-width: 800px; /* Максимальная ширина контента */
+    margin: 0 auto; /* Центрирование контента */
+}
+
+section {
+    margin-bottom: 30px; /* Отступ между секциями */
+}
+
+section h2 {
+    color: #4CAF50; /* Зеленый цвет заголовков */
+    font-size: 2em; /* Размер шрифта */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+section p {
+    font-size: 1.1em; /* Размер шрифта */
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #333; /* Темный фон */
+    color: white; /* Белый текст */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 10px 0; /* Отступы сверху и снизу */
+    position: fixed; /* Фиксированное положение */
+    bottom: 0; /* Прижимаем к низу */
+    width: 100%; /* Ширина на всю страницу */
+}
+
+footer p {
+    margin: 0; /* Убираем отступы */
+}
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+nav ul li a {
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #45a049;
+}
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[readonly] {
+    background-color: #f9f9f9;
+    color: #555;
+    cursor: not-allowed;
+}
+
+.input-with-icon {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2575fc;
+}
+
+.input-with-icon input {
+    padding-left: 40px;
+}
+
+.clickable-input {
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #2575fc;
+    background-color: #f9f9f9;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.clickable-input:hover {
+    color: #6a11cb;
+    background-color: #f0f4f8;
+}
+
+button {
+    background-color: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+}
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2575fc;
+}
+
+.input-with-icon input {
+    padding-left: 40px;
+}
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+section ul li i {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #2575fc;
+}
+
+section ul li a {
+    color: #2575fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section ul li a:hover {
+    color: #6a11cb;
+    text-decoration: underline;
+}
+section h2 {
+    color: #2575fc;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #6a11cb;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+section ul li strong {
+    color: #2575fc;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #2575fc;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+blockquote strong {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #2575fc;
+}
+header {
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.8)), url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Параллакс-эффект */
+}
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
